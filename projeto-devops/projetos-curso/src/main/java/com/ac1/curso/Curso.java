@@ -1,8 +1,5 @@
 package com.ac1.curso;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class Curso {
 	private String nome;
 	//outros atributos podem ser adicionados no futuro

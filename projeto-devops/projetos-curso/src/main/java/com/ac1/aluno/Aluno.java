@@ -4,17 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import com.ac1.curso.Curso;
+import com.ac1.curso.CursoMatriculado;
 
-enum TipoConta
-{
-	BÁSICA,
-	PREMIUM
-}
-
-@SpringBootApplication
 public class Aluno {
 	private String nome;
 	private int identificador;
@@ -40,7 +32,7 @@ public class Aluno {
 	    Iterator<CursoMatriculado> iterator = cursosMatriculados.iterator();
 	    while (iterator.hasNext()) {
 	        CursoMatriculado cursoMatriculado = iterator.next();
-	        if (cursoMatriculado.curso == curso) {
+	        if (cursoMatriculado.getCurso() == curso) {
 	            iterator.remove();
 	        }
 	    }
